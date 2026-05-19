@@ -1,0 +1,4 @@
+name,name_2,phone,id_numeric
+Alice,True,"""07700900123""",001234
+Bob,,01234567890,042
+Charlie,False,,2023-01-01T12:00:00

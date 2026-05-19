@@ -1,0 +1,82 @@
+{
+  "report_version": "1",
+  "original_file_name": "tla-data.csv",
+  "input_path": "C:\\Users\\Ricardo Moses\\Downloads\\tla-data.csv",
+  "encoding_detected": "utf-8-sig",
+  "delimiter_detected": ",",
+  "row_count_before": 254,
+  "row_count_after": 254,
+  "column_count": 14,
+  "renamed_columns": {
+    "Company Name": "company_name",
+    "Company domain": "company_domain",
+    "Lead Name": "lead_name",
+    "Lead Title": "lead_title",
+    "Lead LinkedIn URL": "lead_linkedin_url",
+    "Lead Email Address": "lead_email_address",
+    "Lead Phone Number": "lead_phone_number",
+    "Company LinkedIn URL": "company_linkedin_url",
+    "Country of Business HQ": "country_of_business_hq",
+    "Main Sector": "main_sector",
+    "Closest city": "closest_city",
+    "Status": "status",
+    "Description": "description",
+    "Mobile Phone": "mobile_phone"
+  },
+  "duplicate_columns_fixed": [],
+  "blank_headers_replaced": [],
+  "rows_removed_empty": 0,
+  "rows_removed_duplicate": 0,
+  "null_values_standardized": {
+    "company_domain": 20,
+    "lead_phone_number": 231,
+    "description": 18,
+    "mobile_phone": 175
+  },
+  "booleans_normalised": {},
+  "nonstandard_boolean_tokens": {},
+  "dates_normalised": {},
+  "dates_ambiguous": {},
+  "possible_excel_serial_skipped": {},
+  "columns_with_mixed_types": [
+    "lead_phone_number",
+    "mobile_phone"
+  ],
+  "recommended_supabase_column_types": {
+    "company_name": "text",
+    "company_domain": "text",
+    "lead_name": "text",
+    "lead_title": "text",
+    "lead_linkedin_url": "text",
+    "lead_email_address": "text",
+    "lead_phone_number": "text",
+    "company_linkedin_url": "text",
+    "country_of_business_hq": "text",
+    "main_sector": "text",
+    "closest_city": "text",
+    "status": "text",
+    "description": "text",
+    "mobile_phone": "text"
+  },
+  "type_confidence": {
+    "company_name": 0.7,
+    "company_domain": 0.7,
+    "lead_name": 0.7,
+    "lead_title": 0.7,
+    "lead_linkedin_url": 0.7,
+    "lead_email_address": 0.7,
+    "lead_phone_number": 0.5,
+    "company_linkedin_url": 0.7,
+    "country_of_business_hq": 0.7,
+    "main_sector": 0.7,
+    "closest_city": 0.7,
+    "status": 0.7,
+    "description": 0.7,
+    "mobile_phone": 0.5
+  },
+  "warnings": [
+    "Column 'lead_phone_number' has mixed or incompatible values; using text for DDL.",
+    "Column 'mobile_phone' has mixed or incompatible values; using text for DDL."
+  ],
+  "errors": []
+}

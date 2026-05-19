@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["tabular_cleaner"]
+
+[project]
+name = "tabular-cleaner-supabase"
+version = "1.0.0"
+description = "Clean CSV/TSV/XLS/XLSX for Supabase import"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0,<3",
+  "openpyxl>=3.1,<4",
+  "xlrd>=2.0,<3",
+  "python-dateutil>=2.8,<3",
+  "charset-normalizer>=3.3,<4",
+  "typer>=0.9,<0.25",
+]

@@ -1,0 +1,56 @@
+{
+  "report_version": "1",
+  "original_file_name": "sample_messy.csv",
+  "input_path": "C:\\Users\\Ricardo Moses\\Projects\\Effer-ventures Projects\\Effer Code\\readyforSupabase\\examples\\sample_messy.csv",
+  "encoding_detected": "utf-8-sig",
+  "delimiter_detected": ",",
+  "row_count_before": 4,
+  "row_count_after": 3,
+  "column_count": 4,
+  "renamed_columns": {
+    "Name": "name",
+    "Name [#2]": "name_2",
+    "Phone": "phone",
+    "ID Numeric": "id_numeric"
+  },
+  "duplicate_columns_fixed": [
+    "name_2"
+  ],
+  "blank_headers_replaced": [],
+  "rows_removed_empty": 1,
+  "rows_removed_duplicate": 0,
+  "null_values_standardized": {
+    "name": 1,
+    "name_2": 2,
+    "phone": 2,
+    "id_numeric": 1
+  },
+  "booleans_normalised": {
+    "name_2": 2
+  },
+  "nonstandard_boolean_tokens": {},
+  "dates_normalised": {
+    "id_numeric": 1
+  },
+  "dates_ambiguous": {
+    "id_numeric": [
+      "042"
+    ]
+  },
+  "possible_excel_serial_skipped": {},
+  "columns_with_mixed_types": [],
+  "recommended_supabase_column_types": {
+    "name": "text",
+    "name_2": "boolean",
+    "phone": "text",
+    "id_numeric": "text"
+  },
+  "type_confidence": {
+    "name": 0.7,
+    "name_2": 0.92,
+    "phone": 0.9,
+    "id_numeric": 0.9
+  },
+  "warnings": [],
+  "errors": []
+}
