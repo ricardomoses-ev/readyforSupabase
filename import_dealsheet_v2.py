@@ -4,6 +4,7 @@ import json
 import math
 import os
 import uuid
+from datetime import datetime
 from pathlib import Path
 from urllib import error, request
 
@@ -104,6 +105,22 @@ def as_bigint(value):
         return None
 
 
+def as_date(value):
+    if value is None:
+        return None
+    if isinstance(value, str):
+        stripped = value.strip()
+        if stripped == "":
+            return None
+        for fmt in ("%d/%m/%Y", "%Y-%m-%d"):
+            try:
+                return datetime.strptime(stripped, fmt).date().isoformat()
+            except ValueError:
+                continue
+        return None
+    return None
+
+
 def normalize(value):
     if value is None:
         return None
@@ -127,6 +144,8 @@ def transform_row(raw_row: dict) -> dict:
             row[target_key] = as_bool(raw_value)
         elif target_key == "year":
             row[target_key] = as_bigint(raw_value)
+        elif target_key == "date":
+            row[target_key] = as_date(raw_value)
         else:
             row[target_key] = normalize(raw_value)
 

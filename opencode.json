@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "supabase": {
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp?project_ref=ryieaxmwjkgizlrjjgll"
+    },
+    "close": {
+      "type": "remote",
+      "url": "https://mcp.close.com/mcp",
+      "oauth": false,
+      "headers": {
+        "Close-API-Key": "{env:CLOSE_API_KEY}",
+        "Close-Scope": "mcp.write_safe"
+      }
+    },
+    "close-readonly": {
+      "type": "remote",
+      "url": "https://mcp.close.com/mcp",
+      "oauth": false,
+      "headers": {
+        "Close-API-Key": "{env:CLOSE_API_KEY}",
+        "Close-Scope": "mcp.read"
+      }
+    }
+  }
+}
